@@ -1,0 +1,87 @@
+.bg3 {
+    /* The image used */
+    background-image: url("addCus.jpg");
+
+    /* Full height */
+    height: 50%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bg4 {
+    /* The image used */
+    background-image: url("addCus.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 800px;
+    width: 1500px;
+    
+  }
+  
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+    text-align: left;
+  }
+  
+  .field {
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  input:invalid {
+    background-color: #ffdddd;
+  }
+   
+  input:required:valid {
+    border-color: #00ff00;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #ff0000;
+  }
+  textarea:invalid{
+    background-color: #ffdddd;
+  }
+
+  textarea:required:valid {
+    border-color: #00ff00;
+    border-width: 3px;
+  }
+  
+  textarea:required:invalid {
+    border-color: #ff0000;
+  }
+  
+  .polaroid {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 255), 0 6px 20px 0 rgba(255, 255, 255, 255);
+    text-align: left;
+  }
