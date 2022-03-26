@@ -6,6 +6,8 @@ import AddEmployee from "./components/AddEmployee";
 import ViewEmployee from "./components/ViewEmployee";
 import SingleView from "./components/SingleView";
 import UpdateEmployee from "./components/UpdateEmployee";
+import Report from "./components/report";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -19,8 +21,9 @@ const App = () => {
         <Route path="/display" element={<ViewEmployee />} />
         <Route path="/edit/:id" element={<UpdateEmployee />} />
         <Route path="/view/:id" element={<SingleView />} />
+        <Route path="/report" element={<Report/>}/>
         </Routes>
-        
+        <Footer/>
         </Router>
     </div>
   )

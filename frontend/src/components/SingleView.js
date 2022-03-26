@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Logo from "../components/sigle.jpg"
 
 const SingleView = () => {
   const [employeeID, setEmployeeID] = useState([]); //useState hook for state Management
@@ -44,8 +45,9 @@ const SingleView = () => {
   };
 
   return (
-    <>
-      <div className="card text-center">
+    <div style={{backgroundImage:`url(${Logo})`,backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+    <br/><center>
+      <div className="card text-center" style={{width:"35%"}}>
         <div className="card-header">
           <span style={{ color: "red" }}>{employeeID}</span>
         </div>
@@ -74,7 +76,9 @@ const SingleView = () => {
           </Link>
         </div>
       </div>
-    </>
+      </center>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      </div>
   );
 };
 

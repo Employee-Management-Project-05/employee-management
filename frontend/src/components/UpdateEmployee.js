@@ -4,6 +4,7 @@ import axios from "axios"; //import axios for HTTP requests
 import { TextField, Button } from "@material-ui/core"; //import material UI
 import { ToastContainer, toast } from "react-toastify"; //for toast messages
 import "react-toastify/dist/ReactToastify.css";
+import Image from "../components/update1.jpg"
 
 const UpdateEmployee = () => {
   const [employeeID, setEmployeeID] = useState(""); //useState hook for state Management
@@ -103,8 +104,9 @@ const UpdateEmployee = () => {
     }
   };
   return (
-    <>
-      <form onSubmit={updateHandler}>
+    <div style={{backgroundImage:`url(${Image})`,backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+      <br/>
+      <form onSubmit={updateHandler} className = "mt-10 bg-slate-200 container w-1/4">
         <div className="card">
           <div className="card-header"></div>
           <div className="card-body">
@@ -218,8 +220,10 @@ const UpdateEmployee = () => {
             </center>
           </div>
         </div>
+        <br/>
       </form>
-    </>
+      <br/><br/>
+      </div>
   );
 };
 

@@ -47,7 +47,7 @@ const AddEmployee = (props) => {
       setLoading(false);
     } catch (error) {
       toast(
-        "Error! Novel not Added Duplicate Key Found: employee Name must be unique"
+        "Plz fill the valid details 🤔"
       );
       setLoading(false);
       setIsError(true);
@@ -86,7 +86,7 @@ const AddEmployee = (props) => {
   };
 
   return (
-    <div style={{backgroundImage: "url('emp1.jpg')",  backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+    <div style={{backgroundImage: "url('add1.jpg')",  backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
         <br/>
       <form onSubmit={employeeHandler} className = "mt-10 bg-slate-200 container w-1/4" >
           <div className="">

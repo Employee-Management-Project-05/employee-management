@@ -41,14 +41,16 @@ const ViewEmployee = () => {
     };
 
     return (
-        <div className="div"><br/>
-            <button className="btn btn-success shadow-none" style={{marginLeft:"1200px"}}>
+        <div className="div" style={{backgroundImage: "url('update.jpg')",  backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}><br/>
+           <Link to={"/report"}>
+            <button className="btn btn-success shadow-none" style={{marginLeft:"1150px"}}>
                  <span style={{ fontSize: "12px" }}>
                 <i className="fa fa-pencil" aria-hidden="true"></i>{" "}
                  RepotrGenerate
                 </span>
-                </button>  <br/><br/>
-            <table class="table table-hover table-dark">
+                </button></Link>  <br/><br/>
+                <center>
+            <table class="table table-hover table-dark" style={{width:"90%"}}>
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -123,6 +125,8 @@ const ViewEmployee = () => {
                     )}
                 </tbody>
             </table>
+            </center>
+            <br/><br/><br/><br/><br/><br/>
         </div>
     );
 };
